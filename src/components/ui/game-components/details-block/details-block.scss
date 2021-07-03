@@ -1,0 +1,91 @@
+@import "../../../../sassStyles/mixins";
+
+.details-block {
+	@include game-block;
+	@include noselect;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h2 {
+		color: #3a4374;
+	}
+
+	p {
+		color: #3a4374;
+		font-weight: 600;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	.details {
+		// display: flex;
+		font-size: 18px;
+		color: #3a4374;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		p {
+			font-weight: 500;
+			display: inline-block;
+			margin: 10px 15px;
+			.stats-count {
+				font-weight: 700;
+			}
+		}
+	}
+
+	.difficulties {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 1rem;
+
+		button {
+			border-radius: 10px;
+			padding: 10px 30px;
+			border: none;
+			outline: none;
+			background-color: #4661e6;
+			color: #f2f4fe;
+			font-size: 14px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			cursor: pointer;
+			transition: all 0.2s ease-out;
+			margin: 0 5px;
+
+			&:hover,
+			&.active {
+				background-color: #7c91f9;
+			}
+
+			&.active {
+				cursor: default;
+			}
+		}
+	}
+
+	.reset-btn {
+		border-radius: 10px;
+		padding: 10px 30px;
+		border: none;
+		outline: none;
+		background-color: #d73737;
+		color: #f2f4fe;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+
+		&:hover {
+			background-color: #e98888;
+		}
+	}
+}

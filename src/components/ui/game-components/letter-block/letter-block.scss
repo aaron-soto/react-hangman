@@ -1,0 +1,40 @@
+@import "../../../../sassStyles/mixins";
+
+.letter-block {
+	@include noselect();
+	@include game-block;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 25px 5px;
+
+	.letter-square {
+		@include noselect();
+		height: 50px;
+		width: 50px;
+		color: #4661e6;
+		background-color: #f2f4ff;
+		border-radius: 10px;
+		margin: 5px;
+		display: grid;
+		place-items: center;
+		text-transform: uppercase;
+		font-weight: 700;
+		cursor: pointer;
+		transition: all 0.2s ease-out;
+
+		&.clicked {
+			background-color: #f9faff;
+			cursor: default;
+
+			&:hover {
+				background-color: #f9faff;
+			}
+		}
+
+		&:hover {
+			background-color: #cfd7ff;
+		}
+	}
+}

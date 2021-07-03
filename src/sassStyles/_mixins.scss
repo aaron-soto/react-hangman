@@ -1,0 +1,18 @@
+@mixin noselect() {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@mixin game-block() {
+	width: 100%;
+	max-width: 675px;
+	padding: 30px 45px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	box-shadow: 0 10px 20px rgba(#0c40ce, 0.15);
+}

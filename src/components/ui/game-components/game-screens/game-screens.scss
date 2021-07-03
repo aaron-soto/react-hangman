@@ -1,0 +1,59 @@
+.game-state {
+	height: 300px;
+	width: 500px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 5;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px rgba(#0c40ce, 0.15);
+	font-size: 18px;
+
+	&.win {
+		h2 {
+			color: #2051d9;
+		}
+	}
+
+	&.lose {
+		h2 {
+			color: #d92027;
+		}
+	}
+
+	p {
+		margin: 0;
+
+		span {
+			font-weight: 600;
+		}
+	}
+}
+
+.game-reset {
+	border-radius: 10px;
+	padding: 10px 30px;
+	border: none;
+	outline: none;
+	background-color: #4661e6;
+	color: #f2f4fe;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	margin: 0 5px;
+	margin-top: 2rem;
+
+	&:hover,
+	&.active {
+		background-color: #7c91f9;
+	}
+
+	&.active {
+		cursor: default;
+	}
+}
